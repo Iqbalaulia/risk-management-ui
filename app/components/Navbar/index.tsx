@@ -1,3 +1,5 @@
+"use client";
+
 import React, { FC, useState, useEffect } from "react";
 
 export const Navbar: FC<NavbarProps> = (props) => {

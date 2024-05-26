@@ -1,7 +1,10 @@
-import React from 'react'
+"use client";
+
+import React from "react";
 
 export const Step_1 = () => {
+  
   return (
-    <div>Step_1</div>
-  )
-}
+   <div>dsadsa</div>
+  );
+};
