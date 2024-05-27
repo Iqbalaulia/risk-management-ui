@@ -44,7 +44,7 @@ export const Sidebar = ({ onClick, showSidebar }: SidebarToggleProps) => {
               id="txt_title"
               className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="john.doe@company.com"
-              value={`Child Safety`}
+              defaultValue={`Child Safety`}
             />
           </div>
           <div className="mb-6">
@@ -56,7 +56,7 @@ export const Sidebar = ({ onClick, showSidebar }: SidebarToggleProps) => {
               id="txt_title"
               className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="john.doe@company.com"
-              value={`Direct of Operation`}
+              defaultValue={`Direct of Operation`}
             />
           </div>
           <div className="mb-6">
@@ -68,7 +68,7 @@ export const Sidebar = ({ onClick, showSidebar }: SidebarToggleProps) => {
               rows={18}
               className="block p-2.5 w-full text-sm text-gray-900 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Write your thoughts here..."
-              value={`Est orci gravida diam tempus. Mauris elit sed feugiat consequat habitant urna nibh diam ornare. Fringilla egestas libero turpis ipsum turpis urna vestibulum cras. Eget lorem facilisi faucibus condimentum nullam volutpat. Fusce fames pharetra sagittis vitae venenatis. Aliquam aliquet accumsan sapien at. Fringilla vestibulum. Est orci gravida diam tempus. Mauris elit sed feugiat consequat habitant urna nibh diam ornare. Fringilla egestas libero turpis ipsum turpis urna vestibulum cras. Eget lorem facilisi faucibus condimentum nullam volutpat. Fusce fames pharetra sagittis vitae venenatis. Aliquam aliquet accumsan sapien at. Fringilla vestibulum.`}
+              defaultValue={`Est orci gravida diam tempus. Mauris elit sed feugiat consequat habitant urna nibh diam ornare. Fringilla egestas libero turpis ipsum turpis urna vestibulum cras. Eget lorem facilisi faucibus condimentum nullam volutpat. Fusce fames pharetra sagittis vitae venenatis. Aliquam aliquet accumsan sapien at. Fringilla vestibulum. Est orci gravida diam tempus. Mauris elit sed feugiat consequat habitant urna nibh diam ornare. Fringilla egestas libero turpis ipsum turpis urna vestibulum cras. Eget lorem facilisi faucibus condimentum nullam volutpat. Fusce fames pharetra sagittis vitae venenatis. Aliquam aliquet accumsan sapien at. Fringilla vestibulum.`}
             ></textarea>
           </div>
         </form>
