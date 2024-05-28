@@ -2,7 +2,7 @@
 
 import React, { FC } from "react";
 
-const getWidth = (step) => {
+const getWidth = (step: any) => {
   switch (step) {
     case 1:
       return "w-[25%]";
