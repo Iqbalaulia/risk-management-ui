@@ -1,12 +1,27 @@
 "use client";
 
-import React, { FC, useState, useEffect } from "react";
+import React, { FC } from "react";
 
+const getWidth = (step) => {
+  switch (step) {
+    case 1:
+      return "w-[25%]";
+    case 2:
+      return "w-[50%]";
+    case 3:
+      return "w-[75%]";
+    case 4:
+      return "w-[100%]";
+    default:
+      return "w-[0%]";
+  }
+};
 export const Navbar: FC<NavbarProps> = (props) => {
-  const { mainNavigation } = props;
+  const { mainNavigation, currentStep } = props;
+
   return (
     <div>
-      <nav className="bg-white dark:bg-gray-900 w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+      <nav className="bg-white dark:bg-gray-900 w-full z-20 top-0 start-0 dark:border-gray-600">
         <div className="flex flex-wrap items-center justify-between mx-auto p-4">
           <a
             href="https://flowbite.com/"
@@ -27,6 +42,11 @@ export const Navbar: FC<NavbarProps> = (props) => {
             <span className="text-slate-400	 text-xl">4</span>
           </div>
         </div>
+        <div
+          className={`indicator border-b-[6px] border-primary-orange ${getWidth(
+            currentStep
+          )}`}
+        ></div>
       </nav>
     </div>
   );
