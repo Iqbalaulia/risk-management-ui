@@ -20,6 +20,12 @@ export default function Home() {
   const handlePreviousClick = () => {
     setCurrentStep(currentStep - 1);
   };
+
+  const navigation = {
+    logo: "/image/sirlus.png",
+    stepCount: "4",
+  };
+  
   return (
     <div>
       <Navbar mainNavigation={navigation} currentStep={currentStep} />
@@ -44,8 +50,3 @@ export default function Home() {
     </div>
   );
 }
-
-export const navigation = {
-  logo: "/image/sirlus.png",
-  stepCount: "4",
-};
